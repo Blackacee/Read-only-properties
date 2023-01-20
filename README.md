@@ -1,2 +1,6 @@
 # Read-only-properties
-Making a property read only so that its values cannot be changed 
+ 
+var a = { };
+Object.defineProperty(a, 'foo', { value: 'original', writable: false });
+a.foo = 'new';
+console.log(a.foo);
